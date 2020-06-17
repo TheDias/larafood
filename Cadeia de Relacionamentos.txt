@@ -1,0 +1,50 @@
+User
+  Tenant
+    Plan
+      Profiles
+        Permissions
+
+User: Nelson Dias
+  Tenant: D&D Smart Solutions
+    Plano: Standard
+      Perfil: Financeiro
+        Permissão: view_financeiro
+        Permissão: detail_fin
+        Permissão: add_fin
+      Perfil: Gestor Produtos
+        Permissão: view_product
+      Perfil: Admin
+        Permissão: relatórios
+
+Products
+
+Permissão: view_financeiro
+Permissão: detail_fin
+Permissão: add_fin
+Permissão: view_product
+Permissão: relatórios
+
+
+Atualizando
+
+User: Nelson Dias
+  Tenant: D&D Smart Systems
+    Plan: Business
+      Profile: Financeiro
+        permission: fin_view
+        permission: fin_cad
+        permission: fin_del
+      Profile: Produtos
+        permission: prod_view
+        permission: prod_cad
+        permission: prod_del
+      Profile: Pedidos
+        permission: pedidos
+
+permission: fin_view
+permission: fin_cad
+permission: fin_del
+permission: prod_view
+permission: prod_cad
+permission: prod_del
+permission: pedidos
