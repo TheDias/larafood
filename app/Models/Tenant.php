@@ -21,4 +21,5 @@ class Tenant extends Model
     {
         return $this->belongsTo(Plan::class);
     }
+
 }
