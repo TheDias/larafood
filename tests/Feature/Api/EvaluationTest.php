@@ -52,7 +52,6 @@ class Evaluationtest extends TestCase
             $payload,
             $headers
         );
-        $response->dump();
 
         $response->assertStatus(201);
     }
