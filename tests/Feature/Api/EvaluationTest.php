@@ -40,18 +40,15 @@ class Evaluationtest extends TestCase
 
         $payload = [
             'stars' => 5,
-            'comment' => Str::random(10),
+            'comment' => Str::random(10)
         ];
 
         $headers = [
-            'Authorization' => "Bearer {$token}",
+            'Authorization:' => "Bearer {$token}"
         ];
 
         $response = $this->postJson(
-            "/auth/v1/orders/{$order}/evaluations",
-            $payload,
-            $headers
-        );
+            "/api/auth/v1/orders/{$order}/evaluations", $payload, $headers);
 
         $response->assertStatus(201);
     }
