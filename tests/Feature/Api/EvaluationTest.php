@@ -48,7 +48,7 @@ class Evaluationtest extends TestCase
         ];
 
         $response = $this->postJson(
-            "/api/auth/v1/orders/{$order}/evaluations",
+            "/auth/v1/orders/{$order}/evaluations",
             $payload,
             $headers
         );
